@@ -19,7 +19,7 @@
         const socket = new WebSocket('ws://localhost:1337/');  
         
         socket.onmessage = (msg) => {
-            console.log("I got a message", msg)
+            console.log("I got a message", msg);
         }
         
         socket.onerror =  (err) => {
@@ -27,13 +27,11 @@
         }
 
         socket.onclose =  () => {
-             console.log("disconnected from WebSocket server")
+             console.log("disconnected from WebSocket server");
         }
 
         socket.onopen =  (event) => {
-            
-            console.log("Web Socket is connected")
-            
+            console.log("Web Socket is connected");
         }
           
     </script>
