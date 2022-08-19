@@ -44,6 +44,8 @@ router.post(
       user.password = await bcrypt.hash(password, salt);
 
       await user.save();
+
+      return res.status(200).json({ succes: true });
     } catch (err) {
       res.status(400).json({ error: err.message });
     }
