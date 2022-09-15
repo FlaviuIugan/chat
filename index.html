@@ -14,25 +14,25 @@
     <script>
         
 
-        const message = document.getElementById("messages");
+        // const message = document.getElementById("messages");
             
-        const socket = new WebSocket('ws://localhost:1337/');  
+        // const socket = new WebSocket('ws://localhost:1337/');  
         
-        socket.onmessage = (msg) => {
-            console.log("I got a message", msg);
-        }
+        // socket.onmessage = (msg) => {
+        //     console.log("I got a message", msg);
+        // }
         
-        socket.onerror =  (err) => {
-            console.error("Error : ", err); 
-        }
+        // socket.onerror =  (err) => {
+        //     console.error("Error : ", err); 
+        // }
 
-        socket.onclose =  () => {
-             console.log("disconnected from WebSocket server");
-        }
+        // socket.onclose =  () => {
+        //      console.log("disconnected from WebSocket server");
+        // }
 
-        socket.onopen =  (event) => {
-            console.log("Web Socket is connected");
-        }
+        // socket.onopen =  (event) => {
+        //     console.log("Web Socket is connected");
+        // }
           
     </script>
     

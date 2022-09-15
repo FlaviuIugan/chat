@@ -46,6 +46,7 @@ router.post(
         (err, token) => {
           if (err) throw err;
           console.log("It ran");
+          res.sendFile("./index.html");
           res.json({ token });
         }
       );

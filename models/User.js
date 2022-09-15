@@ -14,6 +14,13 @@ const UserSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+
+  // friends: {
+  //   user: mongoose.Schema.Types.ObjectId,
+  //   ref: UserSchema,
+  // },
+
+  // messages : {} ?
 });
 
 module.exports = mongoose.model("User", UserSchema);
